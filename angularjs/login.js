@@ -13,7 +13,7 @@ app.controller("LoginController", function ($scope, $http) {
     $scope.errorMessage = "";
 
     $http.post(
-      "http://localhost:5116/api/auth/login",
+      "https://cloudspend-api-hdc4d0f3e4h7cjdu.centralindia-01.azurewebsites.net/api/auth/login",
       {
         email: $scope.user.email,
         password: $scope.user.password
