@@ -17,9 +17,6 @@ app.controller("LoginController", function ($scope, $http) {
       {
         email: $scope.user.email,
         password: $scope.user.password
-      },
-      {
-        withCredentials: true
       }
     )
     .then(function (response) {
