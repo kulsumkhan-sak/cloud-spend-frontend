@@ -6,8 +6,6 @@ app.controller("LoginController", function ($scope, $http) {
   $scope.loading = false;
 
   $scope.login = function () {
-    console.log("Login button clicked");
-
     $scope.loading = true;
     $scope.successMessage = "";
     $scope.errorMessage = "";
