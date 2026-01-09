@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="cloudApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="../css/dashboard.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="../angularjs/app.js"></script>
+  <script src="../angularjs/dashboard.js"></script>
+</head>
+
+<body ng-controller="DashboardController">
+
+  <div class="card" ng-if="user">
+    <img ng-if="user.picture" ng-src="{{user.picture}}">
+<h2>{{user.name}}</h2>
+<p>{{user.email}}</p>
+
+
+    <button ng-click="logout()">Logout</button>
+  </div>
+
+</body>
+</html>

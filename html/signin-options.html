@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="cloudApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign in options</title>
+
+  <link rel="stylesheet" href="../css/signin-options.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="../angularjs/app.js"></script>
+  <script src="../angularjs/signin-options.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body ng-controller="SigninOptionsController">
+
+  <div class="page-wrapper">
+    <div class="options-card">
+
+      <h2>Sign in</h2>
+
+      <!-- Google -->
+      <div class="google-wrapper">
+        <div id="googleSignInBtn"></div>
+      </div>
+      
+      <button type="button" class="back" ng-click="goBack()">
+        ← Back to login
+      </button>
+
+    </div>
+  </div>
+
+</body>
+</html>

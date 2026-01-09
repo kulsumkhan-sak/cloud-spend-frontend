@@ -1,9 +1,10 @@
-var app = angular.module("cloudApp", []);
-
-app.controller("LoginController", function ($scope, $http) {
+angular.module("cloudApp").controller("LoginController", function ($scope, $http) {
 
   $scope.user = {};
   $scope.loading = false;
+$scope.goToSignInOptions = function () {
+  window.location.href = "/html/signin-options.html";
+};
 
   $scope.login = function () {
     $scope.loading = true;
